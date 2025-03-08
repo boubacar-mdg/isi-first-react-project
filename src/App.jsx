@@ -1,10 +1,10 @@
 import React from 'react'
-import Composant from './components/Composant'
+import Classe from './components/Classe'
 
 function App() {
   return (
     <>
-     <Composant />
+     <Classe />
     </>
   )
 }
