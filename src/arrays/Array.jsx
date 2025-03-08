@@ -35,7 +35,14 @@ function Array() {
         ))}
       </ul>
 
-      Le fruit qui coute 300 est {fruitThatCosts300.name}
+        {fruitThatCosts300 && (
+          <h1>Le fruit qui coute 300 est {fruitThatCosts300.name}</h1>
+        )}
+
+        {fruitThatCosts300 ? (
+          <h1>Le fruit qui coute 300 est {fruitThatCosts300.name}</h1>
+        ) : null}
+     
     </>
   );
 }
