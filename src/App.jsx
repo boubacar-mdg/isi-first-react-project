@@ -1,11 +1,11 @@
 import React from 'react'
-import Array from './arrays/Array'
+import Composant from './components/Composant'
 
 function App() {
   return (
-    <div>
-        <Array />
-    </div>
+    <>
+     <Composant />
+    </>
   )
 }
 
