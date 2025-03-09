@@ -1,10 +1,10 @@
 import React from 'react'
-import Classe from './components/Classe'
+import UseState from './hooks/UseState'
 
 function App() {
   return (
     <>
-     <Classe />
+     <UseState />
     </>
   )
 }
