@@ -1,10 +1,10 @@
 import React from 'react'
-import UseEffect from './hooks/UseEffect'
+import UseStateAndUseRef from './hooks/UseStateAndUseRef'
 
 function App() {
   return (
     <>
-     <UseEffect />
+     <UseStateAndUseRef />
     </>
   )
 }
