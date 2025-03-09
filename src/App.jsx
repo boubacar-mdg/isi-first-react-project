@@ -1,10 +1,10 @@
 import React from 'react'
-import UseStateAndUseRef from './hooks/UseStateAndUseRef'
+import UseContext from './hooks/UseContext'
 
 function App() {
   return (
     <>
-     <UseStateAndUseRef />
+     <UseContext />
     </>
   )
 }
