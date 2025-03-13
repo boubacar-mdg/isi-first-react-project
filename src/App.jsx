@@ -1,10 +1,10 @@
 import React from 'react'
-import UseContext from './hooks/UseContext'
+import Fetch from './fetch/Fetch'
 
 function App() {
   return (
     <>
-     <UseContext />
+     <Fetch />
     </>
   )
 }
