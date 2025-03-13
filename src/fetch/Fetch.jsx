@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import MealItem from "./MealItem";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Fetch() {
   const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   const fetchDataAsync = async () => {
     setLoading(true);
@@ -28,7 +31,8 @@ export default function Fetch() {
       {loading ?  <>Chargement...</>: meals.map((data) => {
         return <MealItem data={data} />;
       })}
-      <button onClick={fetchDataAsync}>Chercher les plats</button>
+      <button onClick={fetchDataAsync}>Chercher les plats</button> <br />
+      <button onClick={() => navigate("/boite")}>Aller à la page boite</button>
     </>
   );
 }
