@@ -1,17 +1,17 @@
-import React from 'react'
-import Etudiant from './Etudiant'
+import React, { useState } from "react";
+import Etudiant from "./Etudiant";
 
 function Classe() {
-    const responsable = {
-        nom: "M. Dupont",
-        prenom: "Jean",
-        age: 45,
-    }
+  const [responsable, setResponsable] = useState({
+    nom: "M. Dupont",
+    prenom: "Jean",
+    age: 22,
+  });
   return (
     <>
-        <Etudiant nomClasse="M1 DSIA" responsable={responsable} />
+      <Etudiant nomClasse="M1 DSIA" responsable={responsable} set={setResponsable} />
     </>
-  )
+  );
 }
 
-export default Classe
+export default Classe;
